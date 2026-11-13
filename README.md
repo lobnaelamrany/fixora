@@ -11,11 +11,24 @@ The platform allows customers to find services, book appointments, and communica
 
 FIXORA aims to simplify the process of finding and booking reliable services through a user-friendly and multilingual web application.
 
+The platform was fully designed and developed by me, from the initial idea and database architecture to the final user interface and business logic.
+
 The platform supports three main roles:
 
 - 👤 **Customer:** Browse services, find professionals, and make bookings.
 - 🔧 **Professional:** Manage services, receive booking requests, and manage appointments.
 - 🛡️ **Admin:** Manage users, services, bookings, and platform activities.
+
+---
+
+## 👩‍💻 My Role & Contribution
+
+This is a **solo project**. I was responsible for the entire development lifecycle:
+
+- **Concept & Architecture:** Designed the database schema, defined business rules, and structured the MVC architecture.
+- **Backend Development:** Built authentication with Laravel Breeze, implemented role-based access control, and developed booking workflows.
+- **Frontend Development:** Created responsive interfaces using Blade, Tailwind CSS, and Alpine.js.
+- **Multilingual System:** Implemented dynamic content translations using Spatie Translatable.
 
 ---
 
@@ -129,39 +142,34 @@ The design aims to provide:
 
 ```bash
 git clone https://github.com/lobnaelamrany/fixora.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
 cd fixora
 ```
 
-### 3. Install PHP dependencies
+### 2. Install PHP dependencies
 
 ```bash
 composer install
 ```
 
-### 4. Install frontend dependencies
+### 3. Install frontend dependencies
 
 ```bash
 npm install
 ```
 
-### 5. Create the environment file
+### 4. Create the environment file
 
 ```bash
 cp .env.example .env
 ```
 
-### 6. Generate the application key
+### 5. Generate the application key
 
 ```bash
 php artisan key:generate
 ```
 
-### 7. Configure the database
+### 6. Configure the database
 
 Update your `.env` file with your MySQL database credentials:
 
@@ -174,19 +182,19 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 8. Run migrations
+### 7. Run migrations
 
 ```bash
 php artisan migrate
 ```
 
-### 9. Build frontend assets
+### 8. Build frontend assets
 
 ```bash
 npm run build
 ```
 
-### 10. Start the development server
+### 9. Start the development server
 
 ```bash
 php artisan serve
